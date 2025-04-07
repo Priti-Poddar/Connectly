@@ -107,4 +107,22 @@ const addToHistory = async (req, res) => {
     }
 }
 
-export { login, register, getUserHistory, addToHistory };
+const deleteHistory = async (req, res) => {
+    try {
+        const { meetingCode } = req.body;
+        console.log(meetingCode);
+        let deletMeeting = await Meeting.findOneAndDelete({ meetingCode: meetingCode });
+        console.log(deletMeeting);
+        res
+          .status(httpStatus.OK)
+          .json({ message: "Deleted from meeting history" });
+        
+        
+    } catch (e) {
+        console.log(e);
+        
+    }
+  
+}
+
+export { login, register, getUserHistory, addToHistory, deleteHistory };

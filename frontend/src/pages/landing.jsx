@@ -34,7 +34,7 @@ const router = useNavigate();
       <div className="landing-main-container">
         <div>
           <h1>
-            <snap style={{ color: "#ff9839" }}>Connect</snap> with your loved
+            <span style={{ color: "#ff9839" }}>Connect</span> with your loved
             ones!
           </h1>
           <p>Cover a distance by Connectly</p>
