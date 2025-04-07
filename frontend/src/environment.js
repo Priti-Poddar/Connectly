@@ -1,6 +1,6 @@
-let IS_PROD = false;
+let IS_PROD = true;
 const server = IS_PROD
-  ? "https://connectlybackend.onrender.com"
+  ? "https://connectly-2hyj.onrender.com"
   : "http://localhost:8000";
 
 export default server;
